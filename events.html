@@ -11,7 +11,7 @@
       <!-- site metas -->
       <title>This Is A Sample Of A Posted Event</title>
       <meta name="keywords" content="Travel, Road, Journey, Country, City, Remote, Village, Transportation, Communication, Visit, People, Place">
-      <meta name="description" content="oadia exposes route to explore best events in cities and other remote areas. It is an exciting event which involves either you attending alone or you attend with love ones. We are making sure it is an event people would love to attend when they needed too or when they feels like attending.">
+      <meta name="description" content="oadia exposes route to discover best events in cities and other remote areas. It is an exciting event which involves either you attending alone or you attend with love ones. We are making sure it is an event people would love to attend when they needed too or when they feels like attending.">
       <meta name="author" content="https://linkedin.com/in/tobi-ade">
       <!-- bootstrap css -->
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -20,7 +20,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="images/favicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -34,49 +34,54 @@
       <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
    </head>
    <body>
-      <!-- header section start -->
-      <div class="container-fluid">
-         <div class="header_section">
-            <div class="container">
-               <nav class="navbar navbar-light bg-light justify-content-between">
-                  <div id="mySidenav" class="sidenav">
-                     <a href="#">Home</a>
-                     <a href="/#cat">Categories</a>
-                     <a href="/events.html">Events</a>
-                     <a href="/#about">About</a>
-                     <a href="/#contact">Contact Us</a>
-                  </div>
-                     <div class="login_text"><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="padding_left10"><a class="text-light" data-toggle="modal" data-target="#signin">Sign In</a></span></a></div>
-                  <a class="logo" href="#"><font size="14"><b>ROADIA</b></font></a>
-                  <div class="login_text"><a href="#"><i class="fa fa-bolt" aria-hidden="true"></i><span class="padding_left10"><a class="text-light" data-toggle="modal" data-target="#signup">Sign Up</a></span></a></div>
-               </nav>
-            </div>
-         </div>
-      </div>
-      <!-- header section end -->
-      <!-- layout main section start -->
-      <div class="container-fluid">
-         <div class="layout_main">
-            <!-- banner section start -->
-            <div class="banner_section">
-               <div class="container">
-                  <div class="menu_main">
-                     <div class="custome_menu">
-                        <ul>
-                           <li class="active"><a href="#">Home</a></li>
-                           <li><a href="/#cat">Categories</a></li>
-                           <li><a href="events.html">Events</a></li>
-                           <li><a href="/#about">About</a></li>
-                           <li><a href="#contact">Contact Us</a></li>
-                        </ul>
-                     </div>
-                     <div class="menu">
-                        <ul>
-                           <li><a href="/#about">FAQ</a></li>
-                        </ul>
+               <div class="container-fluid">
+                  <div class="header_section">
+                     <div class="container">
+                        <nav class="navbar navbar-light bg-light justify-content-between">
+                           <div id="mySidenav" class="sidenav">
+                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                             <a href="#">Home</a> 
+                             <a href="#cat">Create</a>
+                              <a href="#live">Live</a>
+                              <a href="events.html">Events</a>
+                              <a href="#tour">Tours</a>
+                              <a href="#sub">Subscribe</a>
+                              <a href="#share">Share</a>
+                              <li><a href="#ai"><button class="p-2">AI Tool</button></a></li>
+                           </div>
+                              <div class="login_text"><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="padding_left10"><a class="text-light" data-toggle="modal" data-target="#signin">Sign In</a></span></a></div> 
+                           <a class="logo" href="#"><font size="14"><b>GogoLive</b></font></a>
+                           <span class="toggle" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                           <div class="login_text"><a href="#"><i class="fa fa-bolt" aria-hidden="true"></i><span class="padding_left10"><a class="text-light" data-toggle="modal" data-target="#signup">Sign Up</a></span></a></div>
+                        </nav>
                      </div>
                   </div>
-               </div>         
+               </div>
+               <!-- header section end -->
+               <!-- layout main section start -->
+               <div class="container-fluid">
+                  <div class="layout_main">
+                     <!-- banner section start -->
+                     <div class="banner_section">
+                        <div class="container">
+                           <div class="menu_main">
+                              <div class="custome_menu">
+                                 <ul class="pt-1">
+                                    <li><a href="#cat">Create</a></li>
+                                    <li><a href="#live">Live</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="#tour">Tours</a></li>
+                                    <li><a href="#sub">Subscribe</a></li>
+                                    <li><a href="#share">Share</a></li>
+                                 </ul>
+                              </div>
+                              <div class="menu">
+                                 <ul>
+                                    <li><a href="#ai"><button class="p-2">AI Tool</button></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>    
 
         <!-- event Detail Start -->
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -95,18 +100,18 @@
 
                      <div class="mb-5">
                          <h2 class="mb-3 text-light">Event Description</h2>
-                         <p class="text-light">This is a sample of a posted event on Roadia to an exciting event which involves either you attending alone or you attend with love ones. We are making sure it is an event people would love to attend when they needed too or when they feels like attending. This platform is openned under <a class="text-info" href="https://yourz.netlify.app">YouR</a>  - Your Opened Universe For Revolution as an initiative that exposes route to explore events in cities and other remote areas. Inspired By Nelson Mandela "Its A Long Walk To Freedom" And <a class="text-info" href="">Roadia Team</a> Is Trying To Make It Quick On Freedom To Explore.   </p>            
-                          <h2 class="text-light">Task: On what to expect</h2>
+                         <p class="text-light">This is a sample of a posted event on GogoLive to an exciting event which involves either you attending alone or you attend with love ones. We are making sure it is an event people would love to attend when they needed too or when they feels like attending. This platform is openned to exposes route to discover events in cities and other remote areas. Inspired By Nelson Mandela "Its A Long Walk To Freedom" And <a class="text-info" href="">GogoLive Team</a> Is Trying To Make It Easy On Discovering Events Through <a class="text-info" href="#">GogoLive</a>.   </p>            
+                          <h2 class="text-light">Items: On what to expect</h2>
                          <p class="text-light">We are looking forward to share exciting events of different location very easy and quick to access. These events you may or may not have been too but they are actually exisiting.     </p>
                         <p> <ul class="list-unstyled text-light">
                              <li><i class="fa fa-angle-right text-primary m-2"></i>Get entertained wherever you attend an event</li>
-                             <li><i class="fa fa-angle-right text-primary m-2"></i>Have the chance to explore communities</li>
+                             <li><i class="fa fa-angle-right text-primary m-2"></i>Have the chance to discover communities</li>
                              <li><i class="fa fa-angle-right text-primary m-2"></i>Enage with people around where you attend the event</li>
-                             <li><i class="fa fa-angle-right text-primary m-2"></i>Be happy to access more events on Roadia</li>
-                             <li><i class="fa fa-angle-right text-primary m-2"></i>Believe you have right on freedom to explore with Roadia</li>
+                             <li><i class="fa fa-angle-right text-primary m-2"></i>Be happy to access more events on GogoLive</li>
+                             <li><i class="fa fa-angle-right text-primary m-2"></i>Believe you have right on freedom to discover with GogoLive</li>
                          </ul>
                         </p>
-                         <h2 class="mb-3 text-light">Items: On what to do</h2>
+                         <h2 class="mb-3 text-light">Tasks: On what to do</h2>
                          <p class="text-light">We are looking forward to share exciting events of different location very easy and quick to access. These events you may or may not have been too but they are actually exisiting.     </p>
                               <ul class="list-unstyled text-light">
                              <li><i class="fa fa-angle-right text-primary m-2"></i>Go to the event by yourself and/or with love ones</li>
@@ -115,51 +120,88 @@
                              <li><i class="fa fa-angle-right text-primary m-2"></i>Make friends and stay happy</li>
                              <li><i class="fa fa-angle-right text-primary m-2"></i>Believe you can achieve more for yourself and others</li>
                          </ul>
-                     <button type="button" class="btn bg-light text-light btn-icon-text p-3 m-2 items-center"><i class="fa fa-star text-light me-2"></i>
-                        Register </button>  <button type="button" class="btn bg-light text-light btn-icon-text p-3 m-2 items-center"><i class="fa fa-bell text-light me-2"></i>  Notify Me </button>  <button type="button" class="btn bg-light text-light btn-icon-text p-3 m-2 items-center"><i class="fa fa-bolt text-light me-2"></i>  Support </button>  <button type="button" class="btn bg-light text-light btn-icon-text p-3 m-2 items-center"><i class="fa fa-heart text-light me-2"></i>  Share </button>
-                     <h2 class="mb-3 text-light">Add To Your Calender</h2>
-                     <p class="text-light">
-                        <button type="button" class="btn btn-dark btn-icon-text m-1">
-                            Google Calendar </button>
-                        <button type="button" class="btn btn-primary btn-icon-text m-1">
-                            Calendly </button>
-                        <button type="button" class="btn btn-warning btn-icon-text m-1">
-                            ClickUp </button>
-                        <button type="button" class="btn btn-info btn-icon-text m-1">
-                            Anydo </button>
-                        <button type="button" class="btn btn-light btn-icon-text m-1">
-                            Zoho </button>
-                        <button type="button" class="btn btn-success btn-icon-text m-1">
-                            Microsoft Outlook Calendar   </button>
-                     </p>
-                <!--     <h2 class="mb-3 text-light">For Premium Users Only</h2>
-                     <p class="text-light">
-                        <button type="button" class="btn btn-social-icon-text m-1">Book a Hotel/Motel</button>
-                        <button type="button" class="btn btn-social-icon-text m-1">Rent a Car/Bike</button>
-                        <button type="button" class="btn btn-social-icon-text m-1">Find a Rider/Driver</button>
-                        
-                     </p> -->
+                         <div id="main_slider" class="carousel slide mt-3" data-ride="carousel">
+                           <div class="carousel-inner">
+                             <div class="carousel-item active">                       
+                               <div class="container">
+                                 <img class="center align-items-center" width="100%" height="100%" src="images/tour-1.jpg"></img>
+                                 <div class="mt-2 center">
+                                   <h2>Photo: Before Event</h2>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="carousel-item">
+                               <div class="container">
+                                 <img class="bd-placeholder-img" width="100%" height="100%" src="images/tour-2.jpg"></img>                       
+                                 <div class="mt-2 center">
+                                   <h2>Photo: During Event</h2>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="carousel-item">
+                               <div class="container">
+                                 <img class="bd-placeholder-img" width="100%" height="100%" src="images/tour-3.jpeg"></img>                       
+                                 <div class="mt-2 center">
+                                   <h2>Photo: After Event</h2>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                           <button class="carousel-control-prev button" role="button" href="#main_slider" data-slide="prev">
+                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           </button>
+                           <button class="carousel-control-next button" role="button" href="#main_slider" data-slide="next">
+                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           </button>
+                         </div>
                 </div>
                </div>
                  <div class="col-lg-4">
                      <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
                          <h4 class="mb-4">Event Summary</h4>
                          <p><i class="fa fa-angle-right text-primary me-2"></i>  Country: Nigeria</p>
-                         <p><i class="fa fa-angle-right text-primary me-2"></i>  Event: Physical</p>
-                         <p><i class="fa fa-angle-right text-primary me-2"></i>  Interested: 123 Loves this</p>
                          <p><i class="fa fa-angle-right text-primary me-2"></i>  Category: Tech</p>
+                         <p><i class="fa fa-angle-right text-primary me-2"></i>  Type: Physical</p>
+                         <p><i class="fa fa-angle-right text-primary me-2"></i>  Laps: 1 hour</p>
+                         <p><i class="fa fa-angle-right text-primary me-2"></i>  Interested: 123 Loves this</p>
                          <p><i class="fa fa-angle-right text-primary me-2"></i>  Cost: N0.00</p>
+                         <p><i class="fa fa-angle-right text-primary me-2"></i>  Rewardable: Yes (With registration)</p>
                          <p><i class="fa fa-angle-right text-primary me-2"></i>  Location: Olujoda Lane 10B, Ikere Road, Ado Ekiti, Ekiti. Nigeria</p>
                          <p><i class="fa fa-angle-right text-primary me-2"></i>  Time: 3 pm (WAT)</p>
                          <p><i class="fa fa-angle-right text-primary me-2"></i>  Date: 01 Jan, 2045</p>
                          <p class="m-0"><i class="fa fa-angle-right text-primary me-2"></i>  Shared By: Tobi</p>
                      </div>
                      <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
-                         <h4 class="mb-4">Event Detail</h4>
-                         <p class="m-0">This is a sample of a posted event on Roadia to an exciting event which involves either you attending alone or you attend with love ones. We are making sure it is an event people would love to attend when they needed too or when they feels like attending.</p>
+                         <h4 class="mb-4">Event Entails</h4>
+                         <p class="m-0">This is a sample of a posted event on GogoLive to an exciting event which involves either you attending alone or you attend with love ones. We are making sure it is an event people would love to attend when they needed too or when they feels like attending.</p>
                      </div>
                  </div>
-
+                 <div class="">
+                  <h2 class="m-2 text-light">Get Involve</h2>
+                 <p><button type="button" class="btn bg-light text-light btn-icon-text p-3 m-2 items-center"><i class="fa fa-star text-light me-2"></i>
+                     Register </button>  <button type="button" class="btn bg-light text-light btn-icon-text p-3 m-2 items-center"><i class="fa fa-bell text-light me-2"></i>  Notify Me </button>  <button type="button" class="btn bg-light text-light btn-icon-text p-3 m-2 items-center"><i class="fa fa-bolt text-light me-2"></i>  Support </button></p>
+                 <!-- <h2 class="mb-3 mt-3 text-light">Add To Your Calender</h2>
+                  <p class="text-light">
+                     <button type="button" class="btn btn-dark btn-icon-text m-1">
+                         Google Calendar </button>
+                     <button type="button" class="btn btn-primary btn-icon-text m-1">
+                         Calendly </button>
+                     <button type="button" class="btn btn-warning btn-icon-text m-1">
+                         ClickUp </button>
+                     <button type="button" class="btn btn-info btn-icon-text m-1">
+                         Anydo </button>
+                     <button type="button" class="btn btn-light btn-icon-text m-1">
+                         Zoho </button>
+                     <button type="button" class="btn btn-success btn-icon-text m-1">
+                         Microsoft Outlook Calendar </button>
+                  </p>  --> 
+                   <h2 class="m-3 text-light">Premium Service</h2>
+                  <p class="text-light">
+                     <button type="button" class="btn btn-social-icon-text m-1">Book a Hotel/Motel</button>
+                     <button type="button" class="btn btn-social-icon-text m-1">Rent a Car/Bike</button>
+                     <button type="button" class="btn btn-social-icon-text m-1">Find a Rider/Driver</button>
+                  </p>
+                 </div>
                  <div class="">
                   <h4 class="mb-2">Your Suggestion</h4>
                   <form>
@@ -171,6 +213,9 @@
                               <input type="email" class="form-control" placeholder="Your Email">
                           </div>
                           <div class="col-12 mb-1">
+                           <select class="form-control" placeholder="--Select Poll--"><option value="">--Select Poll--</option><option value="a">Reduce Price</option><option value="b">Change Location</option><option value="c">Rename Event</option><option value="d">Invite Guest</option><option value="e">Change Time</option></select>
+                       </div>
+                          <div class="col-12 mb-1">
                               <textarea class="form-control" rows="5" placeholder="Reply"></textarea>
                           </div>
                           <div class="col-12 mb-4">
@@ -179,57 +224,62 @@
                       </div>
                   </form>
               </div>
-
              </div>
          </div>
      </div>
      <!-- event Detail End -->
 
-            <!-- contact section end -->
-            <!-- footer section start -->
+     <!-- footer section start -->
             <div class="footer_section">
                <div class="container">
                   <div class="footer_sectio_2">
                      <div class="row">
                         <div class="col-lg-3 col-md-6">
-                           <h2 class="footer_logo">Roadia</h2>
-                           <p class="footer_text">Roadia exposes route to explore best events in cities and other remote areas.</p>
+                           <h2 class="footer_logo">GogoLive</h2>
+                           <p class="footer_text">GogoLive exposes route to discover best events in cities and other remote areas.</p>
                         </div>
                         <div class="col-lg-3 col-md-6">
                            <h2 class="useful_text">Navigation</h2>
                            <div class="footer_menu">
                               <ul>
                                  <li class="active"><a href="#">Home</a></li>
-                                 <li><a href="/#cat">Categories</a></li>
-                                 <li><a href="events.html">Events</a></li>
-                                 <li><a href="/#about">About</a></li>
-
+                                 <li><a class="text-light" data-toggle="modal" data-target="#signin">Sign In</a></li>
+                                <li><a class="text-light" data-toggle="modal" data-target="#signup">Sign Up</a></li>
+                                <li class="#blog"><a href="#">Blog</a></li>
+                                <li class="#about"><a href="#">About</a></li>
                               </ul>
                            </div>
+                           <div id="translate"></div>
+                           <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>     
                         </div>
                         <div class="col-lg-3 col-md-6">
                            <h2 class="useful_text">Discover</h2>
-                           <p class="address_text">
+                           <div class="footer_menu">
                             <ul>
-                                <li><a class="text-light" data-toggle="modal" data-target="/#signin">Sign In</a></li>
-                                <li><a class="text-light" data-toggle="modal" data-target="/#signup">Sign Up</a></li>
+                                <li><a href="#cat">Create</a></li>
+                                <li><a href="#cat">Live</a></li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="#tour">Tours</a></li>
+                                <li><a href="#ai">AI Tools</a></li>
                              </ul>
-                           </p>          
-                           <div id="translate"></div>
-                           <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>                                      
+                            </div> 
+                            <div class="social_icon">          
+                              <button class="p-2" id="sub" href="">SUBCRIBE</button>
+                              <span class="result"></span>
+                           </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                            <div class="col-lg-3 col-md-6">
                            <h2 class="useful_text">Support</h2>
-                           <div class="subscribe_menu">
+                           <div class="footer_menu">
                               <ul>
-                                 <li><a href="/#about">FAQ</a></li>
-                                 <li><a href="/#sub">Subscribe</a></li>
-                                 <li><a href="#contact">Contact</a></li>
-                                 <li><a href="#">Privacy Policy</a></li>
+                                 <li><a href="#about">FAQ</a></li>
+                                 <li><a href="#contact">Contact Us</a></li>
+                                 <li><a href="#pp">Privacy Policy</a></li>
+                                 <li><a href="#tc">Terms & Conditions</a></li>
                               </ul>
                            </div>
                            <div class="social_icon">          
-                              <button class="p-2 share" href="">SHARE WITH FRIENDS</button>
+                              <button class="p-2 share" id="share" href="">SHARE WITH FRIENDS</button>
                               <span class="result"></span>
                            </div>
                         </div>
@@ -240,14 +290,109 @@
             <!-- footer section end -->
          </div>
       </div>
+            <!-- copyright section start -->
+            <div class="copyright_section">
+                <div class="container">
+                   <p class="copyright_text">Get On The Move With <a class="text-dark" href="#">GogoLive</a> &copy; 2024</p>
+                   <p><small>Inspire by Nelson Mandela - Its a long walk to freedom. YouRs is trying to make short</small></p>
+                </div>
+             </div>
+             <!-- copyright section end -->
       <!-- layout main section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <p class="copyright_text">An Inspiration From Nelson Mandela "Its A Long Walk To Freedom" And <a class="text-dark" href=/#about">Roadia</a> Is Trying To Make It Quick On Freedom To Explore &copy; <a class="text-dark" href="https://yourz.netlify.app">YouR</a> 2023</p>
+<!-- Sign Up section start -->
+      <div class="modal fade" id="signup" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+           <div class="modal-content bg-light rounded-4 shadow">
+             <div class="modal-header p-5 border-bottom-0">
+               <h2 class="fw-bold text-dark mb-0">Sign up for free</h2>
+               <button type="button" class="close text-dark" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+             </div>
+       
+             <div class="modal-body p-2 px-2">
+               <form class="">
+                <div class="form-floating mb-3">
+                    <input type="username" class="form-control rounded-3" id="floatingInput" placeholder="Username">
+                  </div>
+                 <div class="form-floating mb-3">
+                   <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="Email address">
+                 </div>
+                 <div class="form-floating mb-3">
+                   <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                 </div>
+                 <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                 <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                 <hr class="my-4">
+                 <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                 <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#google"/></svg>
+                    Sign up with Google
+                  </button>
+                 <button class="w-100 py-2 mb-2 btn btn-outline-success rounded-3" type="submit">
+                   <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+                   Sign up with Twitter
+                 </button>
+                 <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                   <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+                   Sign up with Facebook
+                 </button>
+                 <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                   <svg class="bi me-1" width="16" height="16"><use xlink:href="#linkedin"/></svg>
+                   Sign up with LinkedIn
+                 </button>
+               </form>
+             </div>
+           </div>
          </div>
+       </div>
+       <!-- Sign Up section end -->
+
+<!-- Sign Up section start -->
+<div class="modal fade" id="signin" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-light rounded-4 shadow">
+        <div class="modal-header p-5 border-bottom-0">
+          <h2 class="fw-bold text-dark mb-0">Sign in now</h2>
+          <button type="button" class="close text-dark" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+  
+        <div class="modal-body p-2 px-2">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="Email address">
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign in</button>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#google"/></svg>
+                Sign in with Google
+              </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-success rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+              Sign in with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+              Sign in with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#linkedin"/></svg>
+              Sign in with LinkedIn
+            </button>
+          </form>
+        </div>
       </div>
-      <!-- copyright section end -->
+    </div>
+  </div>
+  <!-- Sign In section end -->
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
@@ -258,6 +403,9 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
       <!-- javascript --> 
+     <!-- <script src="assets/js/misc.js"></script>
+      <script src="assets/js/tooltips.js"></script>
+      <script src="assets/js/popover.js"></script>   --> 
       <script src="js/owl.carousel.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>  
       <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
